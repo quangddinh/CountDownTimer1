@@ -7,16 +7,22 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        tools:src="@mipmap/ic_launcher"
-        android:id="@+id/imageView1"
-        android:scaleType="fitXY"
-        android:layout_width="match_parent"
-        android:layout_height="200dp" />
+<!--    <ImageView-->
+<!--        tools:src="@mipmap/ic_launcher"-->
+<!--        android:id="@+id/imageView1"-->
+<!--        android:scaleType="fitXY"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp" />-->
+    <ViewFlipper
+        android:id="@+id/viewflipper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
     <Button
         android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/imageView1"
+        android:layout_below="@+id/viewflipper"
         android:id="@+id/buttonView1"
         android:text="Start"
         android:layout_width="wrap_content"
